@@ -1,3 +1,44 @@
-<p>
-  Charly's components Here
-</p>
+<div class="col-md-4">
+  <mat-card>
+  <mat-sidenav-container  >
+      <div class="content" >
+        <mat-drawer-container class="profile-container padding-div">
+          <mat-drawer mode="side" opened>
+            <mat-card class="profile-card">
+                <mat-card-content>
+              <img mat-card-image src="../assets/img/foto.jpg" alt="Photo"  >
+              <img mat-card-image src="../assets/img/logo.png" alt="Logo" item-width="100%">
+                    <mat-list>
+                        <h3 mat-subheader>Folders</h3>
+                        <mat-list-item >
+                          <mat-icon mat-list-icon>location_on</mat-icon>
+                          <h4 mat-line>Sucursal</h4>
+                          <p mat-line> 1203 Ixtlahuaca, Toluca </p>
+                        </mat-list-item>
+                        <mat-list-item >
+                            <mat-icon mat-list-icon>star</mat-icon>
+                            <h4 mat-line>Evaluacion Personal</h4>
+                        <ngb-rating [rate]="4.5"></ngb-rating>
+                          </mat-list-item>
+                        <mat-divider></mat-divider>
+                        <h3 mat-subheader>Notes</h3>
+                        <mat-list-item >
+                                <mat-icon mat-list-icon>stars</mat-icon>
+                                <h4 mat-line>Ranking en tienda</h4>
+                                <p mat-line> Ocupas el puesto</p>
+                        </mat-list-item>
+                        <mat-list-item >
+                                <mat-icon mat-list-icon>tag_faces</mat-icon>
+                                <h4 mat-line>Ranking a nivel Nacional</h4>
+                                <p mat-line> Estas en el numero </p>
+                        </mat-list-item>
+                        
+                      </mat-list>
+              </mat-card-content>
+            </mat-card>        
+          </mat-drawer>
+          </mat-drawer-container>
+      </div>
+    </mat-sidenav-container>
+  </mat-card>    
+</div>
