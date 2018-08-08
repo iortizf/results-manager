@@ -1,44 +1,170 @@
-<div class="col-md-4">
-  <mat-card>
-  <mat-sidenav-container  >
-      <div class="content" >
-        <mat-drawer-container class="profile-container padding-div">
-          <mat-drawer mode="side" opened>
-            <mat-card class="profile-card">
-                <mat-card-content>
-              <img mat-card-image src="../assets/img/foto.jpg" alt="Photo"  >
-              <img mat-card-image src="../assets/img/logo.png" alt="Logo" item-width="100%">
-                    <mat-list>
-                        <h3 mat-subheader>Folders</h3>
-                        <mat-list-item >
-                          <mat-icon mat-list-icon>location_on</mat-icon>
-                          <h4 mat-line>Sucursal</h4>
-                          <p mat-line> 1203 Ixtlahuaca, Toluca </p>
-                        </mat-list-item>
-                        <mat-list-item >
-                            <mat-icon mat-list-icon>star</mat-icon>
-                            <h4 mat-line>Evaluacion Personal</h4>
-                        <ngb-rating [rate]="4.5"></ngb-rating>
-                          </mat-list-item>
-                        <mat-divider></mat-divider>
-                        <h3 mat-subheader>Notes</h3>
-                        <mat-list-item >
-                                <mat-icon mat-list-icon>stars</mat-icon>
-                                <h4 mat-line>Ranking en tienda</h4>
-                                <p mat-line> Ocupas el puesto</p>
-                        </mat-list-item>
-                        <mat-list-item >
-                                <mat-icon mat-list-icon>tag_faces</mat-icon>
-                                <h4 mat-line>Ranking a nivel Nacional</h4>
-                                <p mat-line> Estas en el numero </p>
-                        </mat-list-item>
-                        
-                      </mat-list>
-              </mat-card-content>
-            </mat-card>        
-          </mat-drawer>
-          </mat-drawer-container>
+
+<div class="col1">
+  <div class="bordes hfull">
+    <div class="magic1">
+      <div class="padding tright">
+        <a href="#"> Editar Perfil</a>
       </div>
-    </mat-sidenav-container>
-  </mat-card>    
+      <img src="assets/img/foto.jpg" class="avatar">
+      <div class="rango">
+        <img src="assets/img/rango.png">
+      </div>
+    </div>
+    <div class="magic2">
+      <div class="padding">
+        <h1>Bienvenido, Alberto</h1>
+        José Alberto Hernández<br>
+        <b>Asesor de Crédito</b>
+        <table class="ranking">
+          <tbody>
+            <tr>
+              <td><img src="assets/img/icons/rank1.svg"></td>
+              <td>
+                Sucursal
+                <b>1203 Ixtlahuaca, Toluca</b>
+              </td>
+            </tr>
+            <tr>
+              <td><img src="assets/img/icons/rank2.svg"></td>
+              <td>
+                Evaluación personal
+                <b><span class="tverde"> 4.80</span> <img src="assets/img/icons/s2.svg"><img src="assets/img/icons/s2.svg"><img src="assets/img/icons/s2.svg"><img src="assets/img/icons/s1.svg"><img src="assets/img/icons/s0.svg"></b>
+              </td>
+            </tr>
+          </tbody> 
+        </table>
+      </div>
+    </div> 
+    <div class="magic3">
+      <div class="padding"> 
+        <table class="ranking">
+          <tbody>
+            <tr>
+              <td><img src="assets/img/icons/rank3.svg"></td>
+              <td>
+                Ranking en tienda 
+                <b>Ocupas el puesto <span class="tverde"> 1 de 4</span></b>
+              </td>
+            </tr>
+            <tr>
+              <td><img src="assets/img/icons/rank4.svg"></td>
+              <td>
+                Ranking a nivel nacional 
+                <b>Estás en el lugar número <span class="tverde"> 30</span></b>
+              </td>
+            </tr>
+          </tbody> 
+        </table>
+      </div>
+    </div>
+    <div class="clear"></div>
+  </div>
 </div>
+<div class="col2">
+				 
+</div>
+<div class="col3">
+    <div class="arrow">
+        <div class="arcol1">
+            <div class="bordes miobjetivo">
+                <div class="padding">
+                    <h1>Objetivo</h1>
+                    Crecer la cartera para poder cobrar capital e intereses y tener una relación de largo plazo con los clientes.
+                </div>
+                <img src="assets/img/arrow1.png" class="front">
+            </div>
+        </div>
+        <div class="arcol2">
+        </div>
+        <div class="arcol3">
+            <div class="bordes porque">
+                <div class="padding">
+                    <h1>¿Por qué?</h1>
+                    Si el cliente gana, tú ganas y ganamos todos.
+                </div>
+                <img src="assets/img/arrow2.png" class="back">
+            </div>
+        </div>
+    </div>
+
+    <div class="bordes">
+        <div class="padding">
+            <h1>Resultados clave</h1>
+            <div class="objetivo">
+                <b>Renovar 16 créditos</b> que están por terminar de pagar (consumo y personales)
+                <div class="avance">
+                    <div class="acol1">
+                        <div class="progress">
+                            <div class="bar anima degradado al81"></div>
+                        </div>
+                    </div>
+                    <div class="acol2">
+                        <b class="tverde">13</b>/16
+                    </div>
+                </div>
+                <span><b>Llevas 13 renovaciones</b>, ¡es el 81% de tu meta!<a href="#" class="goright">Ver detalle</a> </span>
+            </div>
+            <div class="objetivo">
+                <b>Reactivar 10 clientes de crédito</b> que pagaron y no renovaron en el trimestre
+                <div class="avance">
+                    <div class="acol1">
+                        <div class="progress">
+                            <div class="bar anima degradado al50"></div>
+                        </div>
+                    </div>
+                    <div class="acol2">
+                        <b class="tamarillo">5</b>/10
+                    </div>
+                </div>
+                <span><b>Llevas 5 reactivaciones</b>, ¡es el 50% de tu meta!<a href="#" class="goright">Ver detalle</a> </span>
+            </div>
+            <div class="objetivo">
+                Conseguir <b>15 clientes nuevos de crédito</b>
+                <div class="avance">
+                    <div class="acol1">
+                        <div class="progress">
+                            <div class="bar anima degradado al66"></div>
+                        </div>
+                    </div>
+                    <div class="acol2">
+                        <b class="tverde">10</b>/15
+                    </div>
+                </div>
+                <span><b>Llevas 10 nuevos clientes</b>, ¡es el 66% de tu meta!<a href="#" class="goright">Ver detalle</a> </span>
+            </div>
+            <div class="objetivo">
+                <b> Abastecer el 100%</b> de los <b> pedidos pendientes por surtir</b>
+                <div class="avance">
+                    <div class="acol1">
+                        <div class="progress">
+                            <div class="bar anima degradado al100"></div>
+                        </div>
+                    </div>
+                    <div class="acol2">
+                        <b class="tverde">18</b>/18
+                    </div>
+                </div>
+                <span><b>Terminaste con los 18</b>, ¡lograste la meta de la semana!<a href="#" class="goright">Ver detalle</a> </span>
+            </div>
+            <div class="objetivo">
+                Lograr que <b> 85 de tus 100 clientes</b> de crédito estén <b> al corriente con sus pagos</b>
+                <div class="avance">
+                    <div class="acol1">
+                        <div class="progress">
+                            <div class="bar anima degradado al30"></div>
+                        </div>
+                    </div>
+                    <div class="acol2">
+                        <b class="trojo">20</b>/85
+                    </div>
+                </div>
+                <span><b>Sólo 20 de tus clientes van al corriente</b>, llegamos al 30% de tu meta<a href="#" class="goright">Ver detalle</a> </span>
+            </div>
+            <div class="objetivosemana">
+                En lo que va de la semana <span class="tverde">has cubierto el 65% de tu meta</span>
+                <a href="#" class="btn  ">¿Cuánto gano?</a>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+ 

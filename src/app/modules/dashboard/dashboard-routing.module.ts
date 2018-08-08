@@ -5,13 +5,39 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { HeaderComponent } from '../../core/header/header.component';
 import { ResultsComponent } from './components/results/results.component';
 import { SharedModule } from '../../shared/shared.module';
-
+import {
+  MatExpansionModule,
+  MatFormFieldModule,
+  MatInputModule,
+  MatSelectModule,
+  MatButtonModule, 
+  MatIconModule, 
+  MatMenuModule,
+  MatToolbarModule,
+  MatSidenavModule,
+  MatCardModule,
+  MatListModule,
+  MatGridListModule,
+  MatProgressBarModule} from '@angular/material';
 const routes: Routes = [
   { path: '', component: LayoutComponent }
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes), SharedModule],
+  imports: [MatExpansionModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatSelectModule,
+    MatButtonModule, 
+    MatIconModule, 
+    MatMenuModule,
+    MatToolbarModule,
+    MatSidenavModule,
+    MatCardModule,
+    MatListModule,
+    MatGridListModule,
+    MatProgressBarModule,
+    RouterModule.forChild(routes), SharedModule],
   exports: [RouterModule],
   declarations:[LayoutComponent, ProfileComponent, ResultsComponent]
 })
