@@ -1,0 +1,36 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: result-manager-service
+  namespace: pwa-frontend
+  labels:
+    run: result-manager-app
+spec:
+  ports:
+  - port: 80
+    targetPort: 80
+    protocol: TCP
+    name: http
+  - port: 443
+    protocol: TCP
+    name: https
+  selector:
+    run: result-manager-app
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: result-manager-deployment
+  namespace: pwa-frontend
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        run: result-manager-app
+    spec:
+      containers:
+      - name: result-manager-app
+        image: iortizf/result-manager-app:1.0
+        ports:
+        - containerPort: 80
